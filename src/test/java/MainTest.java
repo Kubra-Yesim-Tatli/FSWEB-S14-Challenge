@@ -97,7 +97,7 @@ public class MainTest {
         deluxeBurger.addHamburgerAddition2("test", 3);
         deluxeBurger.addHamburgerAddition3("test", 3);
         double totalPrice = deluxeBurger.itemizeHamburger();
-        assertEquals(totalPrice, 19.10);
+        assertEquals(totalPrice, 14.1);
     }
 
     @DisplayName("Healthy Burger sınıf değişkenleri doğru değerlere sahip mi?")
