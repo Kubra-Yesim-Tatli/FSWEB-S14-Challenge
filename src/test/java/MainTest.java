@@ -77,8 +77,9 @@ public class MainTest {
         hamburger.addHamburgerAddition1("test", 3);
         hamburger.addHamburgerAddition2("test", 3);
         hamburger.addHamburgerAddition3("test", 3);
-        hamburger.itemizeHamburger();
-        assertEquals(hamburger.getPrice(), 13);
+
+        double totalPrice = hamburger.itemizeHamburger();
+        assertEquals(totalPrice, 13);
 
     }
 
@@ -95,8 +96,8 @@ public class MainTest {
         deluxeBurger.addHamburgerAddition1("test", 3);
         deluxeBurger.addHamburgerAddition2("test", 3);
         deluxeBurger.addHamburgerAddition3("test", 3);
-        deluxeBurger.itemizeHamburger();
-        assertEquals(deluxeBurger.getPrice(), 19.10);
+        double totalPrice = deluxeBurger.itemizeHamburger();
+        assertEquals(totalPrice, 19.10);
     }
 
     @DisplayName("Healthy Burger sınıf değişkenleri doğru değerlere sahip mi?")
@@ -110,8 +111,8 @@ public class MainTest {
     public void testHealthyBurgerAddAdditionMethods() throws NoSuchFieldException {
         healthyBurger.addHealthyAddition1("test", 2);
         healthyBurger.addHealthyAddition2("test", 2);
-        healthyBurger.itemizeHamburger();
-        assertEquals(healthyBurger.getPrice(), 9.67);
+        double totalPrice = healthyBurger.itemizeHamburger();
+        assertEquals(totalPrice, 9.67);
     }
 
 }
